@@ -15,7 +15,14 @@ class TokenizerVn extends TokenizerAbstract
      */
     public function tokenize($str)
     {
-        $str = $this->sanitizeByPreg($str, '/[^' . self::VN_LETTERS . '0-9]/siu');
-        return $this->makeTokensByExplosion($str);
+        return $this->tokenizeWithPreg($str);
+    }
+
+    /**
+     * @return string
+     */
+    protected function getPreg()
+    {
+        return '/[^' . self::VN_LETTERS . '0-9]/i';
     }
 }

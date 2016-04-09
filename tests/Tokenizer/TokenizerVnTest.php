@@ -2,10 +2,10 @@
 
 namespace Mufuphlex\Tests\Textonic\Tokenizer;
 
-class TokenizerDefaultTest extends TokenizerTestCase
+class TokenizerVnTest extends TokenizerTestCase
 {
     /** @var string */
-    protected $type = 'default';
+    protected $type = 'vn';
 
     /** @var array */
     protected $tokens = array(
@@ -14,7 +14,6 @@ class TokenizerDefaultTest extends TokenizerTestCase
         'a',
         'token',
         '123',
-        'русский',
         'cuộc',
     );
 }
