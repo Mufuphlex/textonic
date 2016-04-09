@@ -15,4 +15,9 @@ class TokenizerEnTest extends TokenizerTestCase
         'token',
         '123',
     );
+
+    public function testEmptyTokens()
+    {
+        parent::checkEmptyTokens();
+    }
 }

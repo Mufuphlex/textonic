@@ -26,6 +26,7 @@ abstract class TokenizerAbstract implements TokenizerInterface
         $str = $this->trim($str);
         $str = preg_replace('/[ \s\t\r\n]+/su', ' ', $str);
         $str = preg_replace('/[ ]{2,}/', ' ', $str);
+        $str = trim($str);
         return $str;
     }
 

@@ -16,4 +16,9 @@ class TokenizerVnTest extends TokenizerTestCase
         '123',
         'cuộc',
     );
+
+    public function testEmptyTokens()
+    {
+        parent::checkEmptyTokens();
+    }
 }

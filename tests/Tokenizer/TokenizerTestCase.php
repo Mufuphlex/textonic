@@ -18,6 +18,9 @@ abstract class TokenizerTestCase extends \PHPUnit_Framework_TestCase
     /** @var array */
     protected $tokens = array();
 
+    /** @var string */
+    protected $emptyTokensStr = " \r\n\t    \n\t\r ";
+
     public function testTokenize()
     {
         $tokenizer = $this->makeTokenizer();
@@ -31,5 +34,11 @@ abstract class TokenizerTestCase extends \PHPUnit_Framework_TestCase
     protected function makeTokenizer()
     {
         return Factory::make($this->type);
+    }
+
+    protected function checkEmptyTokens()
+    {
+        $tokenizer = $this->makeTokenizer();
+        $this->assertEmpty($tokenizer->tokenize($this->emptyTokensStr));
     }
 }
