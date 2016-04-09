@@ -18,7 +18,7 @@ class Factory
             throw new \InvalidArgumentException('$tokenizerType must be a string, '.gettype($tokenizerType).' given');
         }
 
-        $className = 'Tokenizer'.ucfirst($tokenizerType);
+        $className = __NAMESPACE__.'\Tokenizer'.ucfirst($tokenizerType);
 
         if (!class_exists($className)) {
             throw new \RuntimeException('There is no Tokenizer with class name "'.$className.'"');
