@@ -1,7 +1,8 @@
 {
     "name": "mufuphlex/textonic",
     "type": "library",
-    "version": "0.1.0",
+    "license": "GPL-3.0",
+    "version": "0.1.1",
     "authors": [
         {
             "name": "AlexMirohsnikov"
