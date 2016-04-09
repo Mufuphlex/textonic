@@ -1,14 +1,13 @@
 {
     "name": "mufuphlex/textonic",
     "type": "library",
-    "version": "0.0.1-dev",
+    "version": "0.1.0",
     "authors": [
         {
-            "name": "AlexMirohsnikov",
-            "email": "ilex@nigma.ru"
+            "name": "AlexMirohsnikov"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
       "php":">=5.3"
     },
