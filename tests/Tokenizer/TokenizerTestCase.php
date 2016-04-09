@@ -21,6 +21,13 @@ abstract class TokenizerTestCase extends \PHPUnit_Framework_TestCase
     /** @var string */
     protected $emptyTokensStr = " \r\n\t    \n\t\r ";
 
+    public static function setUpBeforeClass()
+    {
+        parent::setUpBeforeClass();
+        mb_internal_encoding('utf-8');
+        mb_regex_encoding('utf-8');
+    }
+
     public function testTokenize()
     {
         $tokenizer = $this->makeTokenizer();
