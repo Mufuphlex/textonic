@@ -1,4 +1,7 @@
 .idea
+.idea/vcs.xml
 vendor
 tests/coverage
 tests/coverage.txt
+tests/profiling
+diff
