@@ -14,6 +14,6 @@ branches:
     - /^(release\/|hotfix\/)?\d\.\d/
 
 install:
-  - composer install --no-dev
+  - composer install
 
-script: phpunit --configuration phpunit.xml.dist --coverage-text
+script: ./vendor/bin/phpunit --configuration phpunit.xml.dist --coverage-text
